@@ -1,0 +1,50 @@
+/**ÏÈĞò±éÀú  ¸ù×óÓÒ**/
+void PreOrderTravel(BiTree T)
+
+{
+    if(T==NULL)
+    
+    return;
+    printf("%c ",T->data);
+  
+  PreOrderTravel(T->left);
+  
+  PreOrderTravel(T->right);
+
+}
+ 
+
+/**ÖĞĞò±éÀú ×ó¸ùÓÒ**/
+
+void InOrderTravel(BiTree T)
+
+{
+    if(T==NULL)
+      
+  return;
+    
+InOrderTravel(T->left);
+ 
+  printf("%c ",T->data);
+  
+  InOrderTravel(T->right);
+
+}
+
+ 
+/**ºóĞò±éÀú ×óÓÒ¸ù**/
+
+void TailOrderTravel(BiTree T)
+
+{
+  
+  if(T==NULL)
+      
+  return;
+  
+  TailOrderTravel(T->left);
+  
+  TailOrderTravel(T->right);
+   
+ printf("%c ",T->data);
+
